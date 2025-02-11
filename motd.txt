@@ -1,0 +1,100 @@
+; These settings describe the default configuration and text to be shown on the MOTD. This only applies if ulx showMotd is set to 1.
+; All style configuration is set, and the values must be valid CSS.
+; Under info, you may have as many sections as you like. Valid types include "text", "ordered_list", "list".
+; Special type "mods" will automatically list workshop and regular addons in an unordered list.
+; Special type "admins" will automatically list all users within the groups specified in contents.
+; For an example of all of these items, please see the default file generated in ulx\lua\data.lua
+
+"info"	
+{
+	
+	{
+		"type"	"text"
+		"title"	"About This Server"
+		"contents"	
+		{
+			"Mostly centered around the gamemode \'Jazztronauts\', a cooperative theft-em-up about settling in a bar filled with cats in the middle of the Void; one of them is gay as fuck. This server is running ULX."
+		}
+	}
+	
+	{
+		"type"	"ordered_list"
+		"title"	"Rules"
+		"contents"	
+		{
+			"If a map is causing a softlock, please try to votemap the bar (jazz_bar) on the ULX menu. (tip: you bring it up by typing ulx menu on the console)"
+			"Don't mess with other players' stuff. If they want help, they'll ask!"
+			"Don't spam."
+			"Have fun."
+		}
+	}
+	
+	{
+		"type"	"list"
+		"title"	"Reporting Rulebreakers"
+		"contents"	
+		{
+			"Contact an available admin on this server and let them know."
+			"Use @ before typing a chat message to send it to admins."
+			"If no admin is available, note the players name and the current time, then let an admin know as soon as they are available."
+		}
+	}
+	
+	{
+		"title"	"Installed Addons"
+		"type"	"mods"
+	}
+	
+	{
+		"type"	"text"
+		"title"	"WorkShop Collection Hosted"
+		"contents"	
+		{
+			"https://steamcommunity.com/sharedfiles/filedetails/?id=3425647067"
+		}
+	}
+	"description"	"Welcome to our server. Enjoy your stay! (or not!)"
+}
+"style"	
+{
+	"borders"	
+	{
+		"border_color"	"#000000"
+		"border_thickness"	"2px"
+	}
+	"colors"	
+	{
+		"header_text_color"	"#701a63"
+		"header_color"	"#f4f742"
+		"text_color"	"#000000"
+		"background_color"	"#f486f4"
+		"section_text_color"	"#000000"
+	}
+	"fonts"	
+	{
+		"server_name"	
+		{
+			"weight"	"normal"
+			"family"	"Fraklin Gothic Medium"
+			"size"	"32px"
+		}
+		"regular"	
+		{
+			"weight"	"normal"
+			"family"	"Tahoma"
+			"size"	"12px"
+		}
+		"subtitle"	
+		{
+			"weight"	"normal"
+			"family"	"Impact"
+			"size"	"20px"
+		}
+		"section_title"	
+		{
+			"weight"	"normal"
+			"family"	"Impact"
+			"size"	"26px"
+		}
+	}
+}
